@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Branch Practice</title>
+    <style>
+        /* CSS Practice: Target only the rows inside the tbody branch */
+        tbody tr {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            font-family: sans-serif;
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Practice Table</h1>
+
+    <!-- This is the main Table Branch -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Apples</td>
+                <td>$2.00</td>
+            </tr>
+            <tr>
+                <td>Bananas</td>
+                <td>$1.50</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        // JavaScript Practice: 
+        // If you want to test "chopping off" the header branch, 
+        // remove the two slashes (//) from the line below:
+        
+        // document.querySelector('thead').remove();
+    </script>
+
+</body>
+</html>
