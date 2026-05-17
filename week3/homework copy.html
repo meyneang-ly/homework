@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Practice Webpage</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#f2f2f2;
+    font-family:Arial, sans-serif;
+    padding:20px;
+}
+
+/* Header */
+
+.header{
+    background-color:#4a8fe7;
+    color:white;
+    text-align:center;
+    padding:30px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.header h1{
+    margin-bottom:10px;
+}
+
+.header p{
+    font-size:14px;
+}
+
+/* Card */
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+    box-shadow:0 0 5px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+/* Image */
+
+.image-section img{
+    width:250px;
+    border-radius:5px;
+}
+
+/* Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    text-align:center;
+}
+
+th{
+    background:#4a8fe7;
+    color:white;
+    padding:10px;
+    border:1px solid #ddd;
+}
+
+td{
+    padding:10px;
+    border:1px solid #ddd;
+}
+
+/* Forms */
+
+.form-box{
+    width:70%;
+    margin:auto;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    margin-top:10px;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+/* Inline */
+
+.inline{
+    margin-top:5px;
+}
+
+/* Buttons */
+
+.button-group{
+    display:flex;
+    gap:10px;
+}
+
+button{
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    background:#4a8fe7;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#3578d4;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Header -->
+
+<div class="header">
+    <h1>Student Practice Webpage</h1>
+    <p>HTML + CSS Practice (Forms + Table Advanced)</p>
+</div>
+
+<!-- Image Section -->
+
+<div class="card image-section">
+
+    <h2>Image Section</h2>
+
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600"
+    alt="Nature">
+
+</div>
+
+<!-- Table Section -->
+
+<div class="card">
+
+    <h2>Advanced Table</h2>
+
+    <table>
+
+        <tr>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Scores</th>
+            <th rowspan="2">Grade</th>
+        </tr>
+
+        <tr>
+            <th>Math</th>
+            <th>CS</th>
+        </tr>
+
+        <tr>
+            <td>Alice</td>
+            <td>90</td>
+            <td>95</td>
+            <td>A</td>
+        </tr>
+
+        <tr>
+            <td>Bob</td>
+            <td>80</td>
+            <td>85</td>
+            <td>B</td>
+        </tr>
+
+    </table>
+
+</div>
+
+<!-- Form 1 -->
+
+<div class="card form-box">
+
+    <h2>Form 1: Basic Info</h2>
+
+    <form>
+
+        <label>Name *</label>
+        <input type="text">
+
+        <label>Email *</label>
+        <input type="email">
+
+        <label>Password *</label>
+        <input type="password">
+
+        <label>Upload File</label>
+        <input type="file">
+
+        <div class="button-group">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+
+    </form>
+
+</div>
+
+<!-- Form 2 -->
+
+<div class="card form-box">
+
+    <h2>Form 2: Survey Form</h2>
+
+    <form>
+
+        <label>Choose Course *</label>
+
+        <select>
+            <option>-- Select --</option>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+        </select>
+
+        <label>Gender</label>
+
+        <div class="inline">
+            <input type="radio" name="gender"> Male
+
+            <input type="radio" name="gender"> Female
+        </div>
+
+        <label>Skills</label>
+
+        <div class="inline">
+            <input type="checkbox"> HTML
+
+            <input type="checkbox"> CSS
+
+            <input type="checkbox"> JS
+        </div>
+
+        <label>Phone *</label>
+        <input type="tel">
+
+        <label>Message</label>
+        <textarea rows="5"></textarea>
+
+        <button type="submit">Send</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
